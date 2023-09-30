@@ -5,7 +5,7 @@ import NavDropDown from "@/app/utils/NavDropDown";
 
 export default function Header() {
   return (
-    <nav className="sticky top-0 shadow-sm py-5">
+    <nav className="sticky top-0 shadow py-5 bg-white">
       <div className="container flex items-center justify-between">
         <Logo />
         <NavLinks />

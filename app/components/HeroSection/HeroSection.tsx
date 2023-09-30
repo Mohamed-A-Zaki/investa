@@ -13,7 +13,7 @@ import img_6 from "@/app/images/logos/huffpost.svg";
 import img_7 from "@/app/images/logos/techcrunch.svg";
 import img_8 from "@/app/images/logos/wired.svg";
 import app_store_img from "@/app/images/playStore.png";
-import phone_frame from "@/app/images/phone-frame.svg";
+import MainParagraph from "@/app/utils/MainParagraph";
 
 export default function HeroSection() {
   return (
@@ -26,11 +26,11 @@ export default function HeroSection() {
             <h2 className="text-4xl font-semibold">
               Invest at the perfect time.
             </h2>
-            <p className="my-10 text-gray-600 text-xl">
+            <MainParagraph className="my-10">
               By leveraging insights from our network of industry insiders, you
               will know exactly when to buy to maximize profit, and exactly when
               to sell to avoid painful losses.
-            </p>
+            </MainParagraph>
             <div className="flex mb-20">
               <Image src={app_store_img} height={42} alt={"app_store"} />
               <Link href={"https://www.youtube.com/watch?v=dVGQ0BxNxzo"}>
@@ -38,6 +38,7 @@ export default function HeroSection() {
                   <AiOutlinePlayCircle className="inline" /> watch the video
                 </MainButton>
               </Link>
+              M
             </div>
           </div>
 
@@ -59,7 +60,6 @@ export default function HeroSection() {
 
         {/* right section */}
         <div className="text-center">
-          <Image src={phone_frame} className="block m-auto" alt="phone_frame" />
         </div>
       </div>
     </div>
